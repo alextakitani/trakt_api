@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "multi_json"
   spec.add_runtime_dependency "oj"
   spec.add_runtime_dependency "hashie"
+  spec.add_runtime_dependency "dotenv"
 
 end
 

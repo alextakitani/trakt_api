@@ -73,6 +73,7 @@ module TraktApi
             req.headers['trakt-user-login'] = @user_id
             req.headers['trakt-user-token'] = @token
           end.body)
+
         TraktApi::Movie.new(res)
       end || []
     end

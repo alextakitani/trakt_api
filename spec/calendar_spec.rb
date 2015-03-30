@@ -2,9 +2,10 @@ require 'spec_helper'
 
 describe TraktApi::Calendar, :vcr do
 
-  let(:calendar) { TraktApi::Calendar.new(user_id:'aftakitani', password: 'xxxx' , api_key:'xxx') }
+  let(:calendar) { TraktApi::Calendar.new(user_id:ENV['TRAKT_USER'], token: ENV['TRAKT_PASSWORD'] , api_key:ENV['TRAKT_API_KEY']) }
 
   it ".episodes" do
+    binding.pry
     calendar.episodes.should be_a(Array)
   end
 

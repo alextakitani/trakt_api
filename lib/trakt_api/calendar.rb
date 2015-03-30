@@ -25,7 +25,6 @@ module TraktApi
         req.headers['trakt-user-login'] = @user_id
         req.headers['trakt-user-token'] = @token
       end
-
       self.episodes = process_calendar_response(res.body) if res.status == 200
 
     end

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe TraktApi::User do
 
-  let(:user) { TraktApi::User.new(user_id:'aftakitani', password: 'xxx' , api_key:'xxx' , api_secret: 'xxx') }
+  let(:user) { TraktApi::User.new(user_id:ENV['TRAKT_USER'], password: ENV['TRAKT_PASSWORD'] , api_key:ENV['TRAKT_API_KEY'] , api_secret: ENV['TRAKT_API_SECRET']) }
 
   describe ".calendar" do
 
@@ -35,13 +35,15 @@ describe TraktApi::User do
   end
 
   describe ".unwatched_movies"  do
-    it "returns the user's not whatched movies" do
 
-      user.unwatched_movies.should be_a(Array)
+    let(:unwatched_movies) {user.unwatched_movies}
+
+    it "returns the user's not watched movies" do
+      unwatched_movies.should be_a(Array)
     end
 
     it "should be an Movie" do
-      user.unwatched_movies.first.should be_a(TraktApi::Movie)
+      unwatched_movies.first.should be_a(TraktApi::Movie)
     end
 
   end

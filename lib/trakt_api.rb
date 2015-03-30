@@ -11,6 +11,8 @@ require 'simple_oauth'
 require 'date'
 require 'multi_json'
 require 'pp'
+require 'dotenv'
+Dotenv.load
 
 begin
   require 'pry'
