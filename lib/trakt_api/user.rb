@@ -6,7 +6,7 @@ module TraktApi
     def initialize(user_id:nil, password:nil, api_key:nil, api_secret:nil)
       @user_id, @api_key = user_id,api_key
 
-      @conn = Faraday.new(:url => "https://api.trakt.tv") do |c|
+      @conn = Faraday.new(:url => "api-v2launch.trakt.tv") do |c|
         c.request :json
         c.response :json, :content_type => /\bjson$/
         c.use :instrumentation

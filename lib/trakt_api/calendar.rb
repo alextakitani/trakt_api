@@ -11,7 +11,7 @@ module TraktApi
       @user_id, @api_key, @date, @days, @token = user_id,api_key,date,days,token
 
 
-      @conn = Faraday.new(:url => "https://api.trakt.tv") do |c|
+      @conn = Faraday.new(:url => "api-v2launch.trakt.tv") do |c|
         c.request :json
         c.response :json, :content_type => /\bjson$/
         c.use :instrumentation
