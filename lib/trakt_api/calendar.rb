@@ -5,7 +5,7 @@ module TraktApi
     attr_accessor :episodes
 
 
-    def initialize(user_id:nil,api_key:nil,token:nil,date:Date.today-7,days:7)
+    def initialize(user_id:nil,api_key:nil,token:nil,date:Date.today-7,days:8)
 
 
       @user_id, @api_key, @date, @days, @token = user_id,api_key,date,days,token

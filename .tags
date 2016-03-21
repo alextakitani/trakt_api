@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api.rb	/^module TraktApi$/;"	module	line:22
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api/episode.rb	/^module TraktApi$/;"	module	line:1
+Episode	/home/alex/Pessoais/trakt_api/lib/trakt_api/episode.rb	/^class Episode < Hashie::Mash$/;"	class	line:2	class:TraktApi
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api/calendar.rb	/^module TraktApi$/;"	module	line:1
+Calendar	/home/alex/Pessoais/trakt_api/lib/trakt_api/calendar.rb	/^  class Calendar$/;"	class	line:4	class:TraktApi
+initialize	/home/alex/Pessoais/trakt_api/lib/trakt_api/calendar.rb	/^    def initialize(user_id:nil,api_key:nil,token:nil,date:Date.today-7,days:7)$/;"	method	line:8	class:TraktApi.Calendar
+process_calendar_response	/home/alex/Pessoais/trakt_api/lib/trakt_api/calendar.rb	/^    def process_calendar_response(response)$/;"	method	line:32	class:TraktApi
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api/movie.rb	/^module TraktApi$/;"	module	line:1
+Movie	/home/alex/Pessoais/trakt_api/lib/trakt_api/movie.rb	/^class Movie < Hashie::Mash$/;"	class	line:2	class:TraktApi
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api/version.rb	/^module TraktApi$/;"	module	line:1
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api/show.rb	/^module TraktApi$/;"	module	line:2
+Show	/home/alex/Pessoais/trakt_api/lib/trakt_api/show.rb	/^  class Show < Hashie::Mash$/;"	class	line:3	class:TraktApi
+TraktApi	/home/alex/Pessoais/trakt_api/lib/trakt_api/user.rb	/^module TraktApi$/;"	module	line:1
+User	/home/alex/Pessoais/trakt_api/lib/trakt_api/user.rb	/^  class User$/;"	class	line:3	class:TraktApi
+initialize	/home/alex/Pessoais/trakt_api/lib/trakt_api/user.rb	/^    def initialize(user_id:nil, password:nil, api_key:nil, api_secret:nil)$/;"	method	line:6	class:TraktApi.User
+watched_shows	/home/alex/Pessoais/trakt_api/lib/trakt_api/user.rb	/^    def watched_shows$/;"	method	line:29	class:TraktApi
+watched_movies	/home/alex/Pessoais/trakt_api/lib/trakt_api/user.rb	/^    def watched_movies$/;"	method	line:41	class:TraktApi
+unwatched_movies	/home/alex/Pessoais/trakt_api/lib/trakt_api/user.rb	/^    def unwatched_movies$/;"	method	line:52	class:TraktApi
+TraktApi	/home/alex/Pessoais/trakt_api/README.md	/^# TraktApi$/;"	function	line:1
+Installation	/home/alex/Pessoais/trakt_api/README.md	/^## Installation$/;"	function	line:5
+Usage	/home/alex/Pessoais/trakt_api/README.md	/^## Usage$/;"	function	line:19
+Contributing	/home/alex/Pessoais/trakt_api/README.md	/^## Contributing$/;"	function	line:23
