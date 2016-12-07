@@ -37,15 +37,17 @@ module TraktApi
             req.headers['trakt-api-key'] = @api_key
             req.headers['trakt-user-login'] = @user_id
             req.headers['trakt-user-token'] = @token
-          end.body.merge(
-            @conn.get do |req|
-              req.url "/shows/#{ep['show']['ids']['trakt']}?extended=images"
-              req.headers['trakt-api-version'] = '2'
-              req.headers['trakt-api-key'] = @api_key
-              req.headers['trakt-user-login'] = @user_id
-              req.headers['trakt-user-token'] = @token
-            end.body
-          )
+          end.body
+
+          # # .merge(
+          # #   @conn.get do |req|
+          # #     req.url "/shows/#{ep['show']['ids']['trakt']}?extended=images"
+          # #     req.headers['trakt-api-version'] = '2'
+          # #     req.headers['trakt-api-key'] = @api_key
+          # #     req.headers['trakt-user-login'] = @user_id
+          # #     req.headers['trakt-user-token'] = @token
+          # #   end.body
+          # )
 
           show = TraktApi::Show.new(res)
 
